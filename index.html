@@ -14,19 +14,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --steel:#1c2530;
-  --steel-2:#26313f;
-  --charcoal:#141a21;
+  --steel:#e6ebf1;       /* alt-section / input surface */
+  --steel-2:#d9e0e8;
+  --charcoal:#f1f4f8;    /* page / topbar / header / footer base */
   --accent:#f26522;      /* container orange */
   --accent-dk:#d24f14;
-  --line:#33404f;
-  --ink:#eef2f6;
-  --muted:#a9b6c4;
-  --card:#1f2833;
-  --ok:#2ecc71;
+  --line:#d7dee6;
+  --ink:#17222e;         /* primary text (dark on light) */
+  --muted:#54626f;
+  --card:#ffffff;
+  --ok:#1e9e57;
   --radius:14px;
   --wrap:1160px;
-  --shadow:0 18px 40px rgba(0,0,0,.35);
+  --shadow:0 18px 40px rgba(20,30,45,.10);
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -50,7 +50,7 @@ section{position:relative}
 .topbar .tb-right{display:flex;gap:18px;flex-wrap:wrap}
 
 /* ---------- Header / Nav ---------- */
-header{position:sticky;top:0;z-index:50;background:rgba(20,26,33,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0}
 .brand{display:flex;align-items:center;gap:12px;font-family:'Barlow Condensed';font-weight:700;font-size:1.5rem;letter-spacing:.5px;text-transform:uppercase}
 .brand .logo{width:44px;height:44px;flex:0 0 auto}
@@ -204,7 +204,7 @@ header{position:sticky;top:0;z-index:50;background:rgba(20,26,33,.92);backdrop-f
 .field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--accent)}
 .field textarea{resize:vertical;min-height:100px}
 .two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-.form-msg{display:none;background:rgba(46,204,113,.12);border:1px solid rgba(46,204,113,.4);color:#8ff0b6;padding:12px 16px;border-radius:10px;margin-top:14px;font-size:.9rem}
+.form-msg{display:none;background:rgba(30,158,87,.12);border:1px solid rgba(30,158,87,.45);color:#12703f;padding:12px 16px;border-radius:10px;margin-top:14px;font-size:.9rem}
 .form-msg.show{display:block}
 
 /* ---------- Map ---------- */
@@ -681,7 +681,7 @@ footer{background:var(--charcoal);border-top:1px solid var(--line);padding:56px 
           <div class="field"><label for="postcode">Delivery postcode</label><input id="postcode" name="postcode" type="text" placeholder="BB1 6BB"></div>
           <div class="field"><label for="message">Tell us more</label><textarea id="message" name="message" placeholder="What are you storing? When do you need it?"></textarea></div>
           <button type="submit" class="btn lg" style="width:100%">Send My Enquiry</button>
-          <div class="form-msg" id="formMsg">✅ Thanks! Your enquiry is ready — your email app will open to send it to us, or call <a href="tel:07771208199" style="color:#8ff0b6;font-weight:700">07771 208199</a>.</div>
+          <div class="form-msg" id="formMsg">✅ Thanks! Your enquiry is ready — your email app will open to send it to us, or call <a href="tel:07771208199" style="color:#0f5c34;font-weight:700">07771 208199</a>.</div>
         </form>
       </div>
     </div>
